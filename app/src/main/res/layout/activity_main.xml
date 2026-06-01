@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/tentoMaisDozeJog1"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="+12"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placarJogador1" />
+
+    <Button
+        android:id="@+id/tentoMaisDozeJog2"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="+12"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tentoMaisNoveJog2"
+        app:layout_constraintTop_toBottomOf="@+id/placarJogador2" />
+
+    <Button
+        android:id="@+id/tentoMaisNoveJog1"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="+9"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/tentoMaisDozeJog1"
+        app:layout_constraintTop_toBottomOf="@+id/placarJogador1" />
+
+    <Button
+        android:id="@+id/tentoMaisNoveJog2"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="+9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placarJogador2" />
+
+    <Button
+        android:id="@+id/tentoMaisSeisJog1"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="+6"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tentoMaisDozeJog1" />
+
+    <Button
+        android:id="@+id/tentoMaisSeisJog2"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="+6"
+        app:layout_constraintEnd_toStartOf="@+id/tentoMaisTresJog2"
+        app:layout_constraintTop_toBottomOf="@+id/tentoMaisDozeJog2" />
+
+    <Button
+        android:id="@+id/tentoMaisTresJog1"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="+3"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/tentoMaisSeisJog1"
+        app:layout_constraintTop_toBottomOf="@+id/tentoMaisNoveJog1" />
+
+    <Button
+        android:id="@+id/tentoMaisTresJog2"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="+3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tentoMaisNoveJog2" />
+
+    <Button
+        android:id="@+id/tentoMaisUmJog1"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="+1"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/tentoMenosUmJog1"
+        app:layout_constraintTop_toBottomOf="@+id/tentoMaisTresJog1" />
+
+    <Button
+        android:id="@+id/tentoMaisUmJog2"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="+1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tentoMaisTresJog2" />
+
+    <Button
+        android:id="@+id/tentoMenosUmJog1"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="-1"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tentoMaisSeisJog1" />
+
+    <Button
+        android:id="@+id/tentoMenosUmJog2"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="-1"
+        app:layout_constraintEnd_toStartOf="@+id/tentoMaisUmJog2"
+        app:layout_constraintTop_toBottomOf="@+id/tentoMaisSeisJog2" />
+
+    <Button
+        android:id="@+id/resetJogador1"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Reset"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tentoMenosUmJog1" />
+
+    <Button
+        android:id="@+id/resetJogador2"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tentoMenosUmJog2" />
+
+    <Button
+        android:id="@+id/listarMovimentos"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Historico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resetJogador1" />
+
+    <RadioButton
+        android:id="@+id/partidaGanhaJogador11"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contadorPartida" />
+
+    <RadioButton
+        android:id="@+id/partidaGanhaJogador12"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/partidaGanhaJogador11"
+        app:layout_constraintTop_toBottomOf="@id/contadorPartida" />
+
+    <RadioButton
+        android:id="@+id/partidaGanhaJogador13"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/partidaGanhaJogador12"
+        app:layout_constraintTop_toBottomOf="@id/contadorPartida" />
+
+    <RadioButton
+        android:id="@+id/partidaGanhaJogador21"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/partidaGanhaJogador22"
+        app:layout_constraintTop_toBottomOf="@id/contadorPartida" />
+
+    <RadioButton
+        android:id="@+id/partidaGanhaJogador22"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/partidaGanhaJogador23"
+        app:layout_constraintTop_toBottomOf="@id/contadorPartida" />
+
+    <RadioButton
+        android:id="@+id/partidaGanhaJogador23"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contadorPartida" />
+
+
+    <TextView
+        android:id="@+id/tituloJogo"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="28dp"
+        android:text="Marcador de Truco"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contadorPartida"
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloJogo" />
+
+    <EditText
+        android:id="@+id/jogador1"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Jogador 1"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/partidaGanhaJogador11" />
+
+    <EditText
+        android:id="@+id/jogador2"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="Jogador 2"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/partidaGanhaJogador23" />
+
+    <TextView
+        android:id="@+id/placarJogador1"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jogador1" />
+
+    <TextView
+        android:id="@+id/placarJogador2"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:lineBreakWordStyle="phrase"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jogador2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
