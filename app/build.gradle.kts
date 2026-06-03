@@ -10,6 +10,11 @@ android {
         }
     }
 
+    buildFeatures {
+        viewBinding = true
+    }
+
+
     defaultConfig {
         applicationId = "br.edu.posutfpr.marcadortruco"
         minSdk = 26

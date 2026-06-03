@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MarcadorTruco">
         <activity
+            android:name=".Historico"
+            android:exported="false" />
+        <activity
+            android:name=".InformarJogadores"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

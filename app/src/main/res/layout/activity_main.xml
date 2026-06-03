@@ -9,222 +9,249 @@
     tools:context=".MainActivity">
 
 
+    <TextView
+        android:id="@+id/tvNumeroPartidas"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@+id/tvContadorPartida"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloJogo" />
+
     <Button
-        android:id="@+id/tentoMaisDozeJog1"
+        android:id="@+id/btTentoMaisDozeJog1"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:text="+12"
         android:textAlignment="center"
-        android:textSize="14sp"
+        android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/placarJogador1" />
+        app:layout_constraintTop_toBottomOf="@+id/tvPlacarJogador1" />
 
     <Button
-        android:id="@+id/tentoMaisDozeJog2"
+        android:id="@+id/btTentoMaisDozeJog2"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:text="+12"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/tentoMaisNoveJog2"
-        app:layout_constraintTop_toBottomOf="@+id/placarJogador2" />
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/btTentoMaisNoveJog2"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlacarJogador2" />
 
     <Button
-        android:id="@+id/tentoMaisNoveJog1"
+        android:id="@+id/btTentoMaisNoveJog1"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:text="+9"
         android:textAlignment="center"
-        app:layout_constraintStart_toEndOf="@+id/tentoMaisDozeJog1"
-        app:layout_constraintTop_toBottomOf="@+id/placarJogador1" />
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/btTentoMaisDozeJog1"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlacarJogador1" />
 
     <Button
-        android:id="@+id/tentoMaisNoveJog2"
+        android:id="@+id/btTentoMaisNoveJog2"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:text="+9"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/placarJogador2" />
+        app:layout_constraintTop_toBottomOf="@+id/tvPlacarJogador2" />
 
     <Button
-        android:id="@+id/tentoMaisSeisJog1"
+        android:id="@+id/btTentoMaisSeisJog1"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:text="+6"
         android:textAlignment="center"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tentoMaisDozeJog1" />
+        app:layout_constraintTop_toBottomOf="@+id/btTentoMaisDozeJog1" />
 
     <Button
-        android:id="@+id/tentoMaisSeisJog2"
+        android:id="@+id/btTentoMaisSeisJog2"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="+6"
-        app:layout_constraintEnd_toStartOf="@+id/tentoMaisTresJog2"
-        app:layout_constraintTop_toBottomOf="@+id/tentoMaisDozeJog2" />
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btTentoMaisTresJog2"
+        app:layout_constraintTop_toBottomOf="@+id/btTentoMaisDozeJog2" />
 
     <Button
-        android:id="@+id/tentoMaisTresJog1"
+        android:id="@+id/btTentoMaisTresJog1"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="+3"
         android:textAlignment="center"
-        app:layout_constraintStart_toEndOf="@+id/tentoMaisSeisJog1"
-        app:layout_constraintTop_toBottomOf="@+id/tentoMaisNoveJog1" />
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/btTentoMaisSeisJog1"
+        app:layout_constraintTop_toBottomOf="@+id/btTentoMaisNoveJog1" />
 
     <Button
-        android:id="@+id/tentoMaisTresJog2"
+        android:id="@+id/btTentoMaisTresJog2"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:text="+3"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tentoMaisNoveJog2" />
+        app:layout_constraintTop_toBottomOf="@+id/btTentoMaisNoveJog2" />
 
     <Button
-        android:id="@+id/tentoMaisUmJog1"
+        android:id="@+id/btTentoMaisUmJog1"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="+1"
         android:textAlignment="center"
-        app:layout_constraintStart_toEndOf="@+id/tentoMenosUmJog1"
-        app:layout_constraintTop_toBottomOf="@+id/tentoMaisTresJog1" />
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/btTentoMenosUmJog1"
+        app:layout_constraintTop_toBottomOf="@+id/btTentoMaisTresJog1" />
 
     <Button
-        android:id="@+id/tentoMaisUmJog2"
+        android:id="@+id/btTentoMaisUmJog2"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:text="+1"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tentoMaisTresJog2" />
+        app:layout_constraintTop_toBottomOf="@+id/btTentoMaisTresJog2" />
 
     <Button
-        android:id="@+id/tentoMenosUmJog1"
+        android:id="@+id/btTentoMenosUmJog1"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:text="-1"
         android:textAlignment="center"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tentoMaisSeisJog1" />
+        app:layout_constraintTop_toBottomOf="@+id/btTentoMaisSeisJog1" />
 
     <Button
-        android:id="@+id/tentoMenosUmJog2"
+        android:id="@+id/btTentoMenosUmJog2"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="-1"
-        app:layout_constraintEnd_toStartOf="@+id/tentoMaisUmJog2"
-        app:layout_constraintTop_toBottomOf="@+id/tentoMaisSeisJog2" />
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btTentoMaisUmJog2"
+        app:layout_constraintTop_toBottomOf="@+id/btTentoMaisSeisJog2" />
 
     <Button
-        android:id="@+id/resetJogador1"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
+        android:id="@+id/btNomeJogadores"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:text="Reset"
+        android:layout_marginTop="28dp"
+        android:text="Inf. Nomes Jogadores"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tentoMenosUmJog1" />
+        app:layout_constraintTop_toBottomOf="@+id/btTentoMenosUmJog1" />
 
     <Button
-        android:id="@+id/resetJogador2"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:text="Reset"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tentoMenosUmJog2" />
-
-    <Button
-        android:id="@+id/listarMovimentos"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
+        android:id="@+id/btResetJogo"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:text="Historico"
+        android:layout_marginTop="16dp"
+        android:text="Reset"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resetJogador1" />
+        app:layout_constraintTop_toBottomOf="@+id/btNomeJogadores" />
+
+    <Button
+        android:id="@+id/btHistorico"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Histórico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btResetJogo" />
 
     <RadioButton
-        android:id="@+id/partidaGanhaJogador11"
+        android:id="@+id/rbPartidaGanhaJogador11"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="16dp"
+        android:checked="false"
+        android:clickable="false"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/contadorPartida" />
+        app:layout_constraintTop_toBottomOf="@id/tvContadorPartida" />
 
     <RadioButton
-        android:id="@+id/partidaGanhaJogador12"
+        android:id="@+id/rbPartidaGanhaJogador12"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/partidaGanhaJogador11"
-        app:layout_constraintTop_toBottomOf="@id/contadorPartida" />
+        android:clickable="false"
+        app:layout_constraintStart_toEndOf="@+id/rbPartidaGanhaJogador11"
+        app:layout_constraintTop_toBottomOf="@id/tvContadorPartida" />
 
     <RadioButton
-        android:id="@+id/partidaGanhaJogador13"
+        android:id="@+id/rbPartidaGanhaJogador13"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/partidaGanhaJogador12"
-        app:layout_constraintTop_toBottomOf="@id/contadorPartida" />
+        android:clickable="false"
+        app:layout_constraintStart_toEndOf="@+id/rbPartidaGanhaJogador12"
+        app:layout_constraintTop_toBottomOf="@id/tvContadorPartida" />
 
     <RadioButton
-        android:id="@+id/partidaGanhaJogador21"
+        android:id="@+id/rbPartidaGanhaJogador21"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/partidaGanhaJogador22"
-        app:layout_constraintTop_toBottomOf="@id/contadorPartida" />
+        android:clickable="false"
+        app:layout_constraintEnd_toStartOf="@+id/rbPartidaGanhaJogador22"
+        app:layout_constraintTop_toBottomOf="@id/tvContadorPartida" />
 
     <RadioButton
-        android:id="@+id/partidaGanhaJogador22"
+        android:id="@+id/rbPartidaGanhaJogador22"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/partidaGanhaJogador23"
-        app:layout_constraintTop_toBottomOf="@id/contadorPartida" />
+        android:clickable="false"
+        app:layout_constraintEnd_toStartOf="@+id/rbPartidaGanhaJogador23"
+        app:layout_constraintTop_toBottomOf="@id/tvContadorPartida" />
 
     <RadioButton
-        android:id="@+id/partidaGanhaJogador23"
+        android:id="@+id/rbPartidaGanhaJogador23"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="40dp"
+        android:clickable="false"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/contadorPartida" />
+        app:layout_constraintTop_toBottomOf="@id/tvContadorPartida" />
 
 
     <TextView
-        android:id="@+id/tituloJogo"
+        android:id="@+id/tvTituloJogo"
         android:layout_width="270dp"
         android:layout_height="40dp"
         android:layout_marginStart="68dp"
@@ -236,42 +263,43 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/contadorPartida"
-        android:layout_width="270dp"
+        android:id="@+id/tvContadorPartida"
+        android:layout_width="130dp"
         android:layout_height="35dp"
         android:layout_marginStart="68dp"
         android:layout_marginTop="16dp"
+        android:text="Partida n.:"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloJogo" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloJogo" />
 
-    <EditText
-        android:id="@+id/jogador1"
+    <TextView
+        android:id="@+id/tvJogador1"
         android:layout_width="160dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:text="Jogador 1"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/partidaGanhaJogador11" />
+        app:layout_constraintTop_toBottomOf="@+id/rbPartidaGanhaJogador11" />
 
-    <EditText
-        android:id="@+id/jogador2"
+    <TextView
+        android:id="@+id/tvJogador2"
         android:layout_width="160dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:text="Jogador 2"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/partidaGanhaJogador23" />
+        app:layout_constraintTop_toBottomOf="@+id/rbPartidaGanhaJogador23" />
 
     <TextView
-        android:id="@+id/placarJogador1"
+        android:id="@+id/tvPlacarJogador1"
         android:layout_width="160dp"
         android:layout_height="60dp"
         android:layout_marginStart="32dp"
@@ -279,19 +307,28 @@
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/jogador1" />
+        app:layout_constraintTop_toBottomOf="@+id/tvJogador1" />
 
     <TextView
-        android:id="@+id/placarJogador2"
+        android:id="@+id/tvPlacarJogador2"
         android:layout_width="160dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
-        android:lineBreakWordStyle="phrase"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/jogador2" />
+        app:layout_constraintTop_toBottomOf="@+id/tvJogador2" />
+
+    <View
+        android:id="@+id/vDivider"
+        android:layout_width="1dp"
+        android:layout_height="335dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toEndOf="@+id/tvPlacarJogador1"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumeroPartidas" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
