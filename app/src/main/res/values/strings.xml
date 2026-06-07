@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">Marcador Truco</string>
+    <string name="app_name">MarcadorTruco</string>
+    <string name="desc_imagem_fundo_tela_principal">Imagem estática de cartas de baralho caindo na vertical uma a pós a outra.</string>
+    <string name="botao_mais_12">+12</string>
+    <string name="botão_mais_nove">+9</string>
+    <string name="botão_mais_doze">+12</string>
+    <string name="botão_mais_seis">+6</string>
+    <string name="botão_mais_nove_j2">+9</string>
+    <string name="botão_mais_seis_j2">+6</string>
+    <string name="botão_mais_tres_j1">+3</string>
+    <string name="botão_mais_tres_j2">+3</string>
+    <string name="botão_mais_um_j1">+1</string>
+    <string name="botão_mais_um_j2">+1</string>
+    <string name="botão_menos_um_j1">-1</string>
+    <string name="botão_menos_um_j2">-1</string>
+    <string name="info_nomes_jogadores">Info Nomes Jogadores</string>
+    <string name="reiniciar">Reset</string>
+    <string name="historico">Histórico</string>
+    <string name="marcador_de_truco">Marcador de Truco</string>
+    <string name="partida_n">Partida n.:</string>
+    <string name="truco">Truco!</string>
+    <string name="marcador_de_partidas">Marcador de Partidas</string>
+    <string name="como_deseja_come_ar">Como deseja começar?</string>
+    <string name="informar_nomes_dos_jogadores">Informar nomes dos jogadores</string>
+    <string name="manter_jogador_1_e_jogador_2"><![CDATA[Manter -> Jogador 1 e Jogador 2]]></string>
 </resources>

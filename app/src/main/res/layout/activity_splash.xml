@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#1B1B2F"
+    android:animateLayoutChanges="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/truco"
+        android:textSize="48sp"
+        android:textColor="#FFD700"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/marcador_de_partidas"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="64dp"/>
+
+    <!-- Pergunta aos jogadores -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/como_deseja_come_ar"
+        android:textSize="16sp"
+        android:textColor="#CCCCCC"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btInformarNomes"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/informar_nomes_dos_jogadores" />
+
+    <Button
+        android:id="@+id/btContinuar"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:text="@string/manter_jogador_1_e_jogador_2"
+        android:textColor="#AAAAAA"
+        tools:ignore="TextSizeCheck" />
+
+</LinearLayout>
