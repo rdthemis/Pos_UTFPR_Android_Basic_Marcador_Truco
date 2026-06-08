@@ -88,6 +88,7 @@ class MainActivity : AppCompatActivity() {
             tentosJogador2 += tento
             if (tentosJogador2 < 0) tentosJogador2 = 0
             binding.tvPlacarJogador2.text = tentosJogador2.toString()
+            registraJogada(jogador2, tento)
         }
 
         val vencedor = verificaVencedor()
